@@ -1,26 +1,26 @@
-# 💻 HelpDeskPro v1
+# 💻 HelpDeskPro V1
 
-Sistema de Mesa de Ayuda desarrollado en **Java** utilizando **Programación Orientada a Objetos (POO)**, **Maven**, **JDBC** y **MySQL**.
+Sistema de Mesa de Ayuda desarrollado en **Java**, utilizando **Programación Orientada a Objetos (POO)**, **Maven**, **JDBC** y **MySQL**.
 
-Este proyecto simula un sistema básico de soporte técnico para la gestión de usuarios, equipos y tickets de incidencias.
-
----
-
-## 🚀 Características
-
-- Registro de usuarios
-- Registro de equipos
-- Creación de tickets de soporte
-- Visualización de usuarios
-- Visualización de equipos
-- Visualización de tickets
-- Cierre de tickets
-- Persistencia de datos mediante MySQL
-- Exportación de tickets a archivo CSV
+El proyecto simula un sistema básico de soporte técnico para la gestión de usuarios, equipos y tickets de incidencias.
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+# 🚀 Funcionalidades
+
+- ✅ Registro de usuarios
+- ✅ Registro de equipos
+- ✅ Creación de tickets
+- ✅ Visualización de usuarios
+- ✅ Visualización de equipos
+- ✅ Visualización de tickets
+- ✅ Cierre de tickets
+- ✅ Persistencia de datos en MySQL
+- ✅ Exportación de tickets a CSV
+
+---
+
+# 🛠 Tecnologías utilizadas
 
 - Java 23
 - Maven
@@ -32,9 +32,9 @@ Este proyecto simula un sistema básico de soporte técnico para la gestión de 
 
 ---
 
-## 📂 Estructura del proyecto
+# 📂 Estructura del proyecto
 
-```
+```text
 HelpDesk
 │
 ├── src
@@ -67,15 +67,15 @@ HelpDesk
 
 ---
 
-## 🗄️ Base de datos
+# 🗄 Base de datos
 
-El proyecto utiliza una base de datos MySQL llamada:
+El sistema utiliza una base de datos MySQL llamada:
 
-```
+```sql
 helpdesk_db
 ```
 
-Tablas utilizadas:
+Con las siguientes tablas:
 
 - usuarios
 - equipos
@@ -83,52 +83,88 @@ Tablas utilizadas:
 
 ---
 
-## ▶️ Ejecución
+# 📸 Capturas del proyecto
+
+## Menú principal
+
+Permite acceder a todas las funcionalidades del sistema de Mesa de Ayuda.
+
+![Menú principal](docs/menu-principal.png)
+
+---
+
+## Creación de un ticket
+
+Ejemplo de creación de un ticket de soporte técnico y almacenamiento exitoso en MySQL.
+
+![Crear Ticket](docs/crear-ticket.png)
+
+---
+
+## Persistencia en MySQL
+
+Verificación de que el ticket fue almacenado correctamente en la base de datos.
+
+![MySQL](docs/mysql-tickets.png)
+
+---
+
+# ▶️ Cómo ejecutar el proyecto
 
 1. Clonar el repositorio.
-2. Crear la base de datos `helpdesk_db` en MySQL.
+
+```bash
+git clone https://github.com/Sebastian6161/HelpDesk_V1.git
+```
+
+2. Crear la base de datos **helpdesk_db** en MySQL.
+
 3. Ejecutar el script de creación de tablas.
-4. Configurar el usuario y contraseña en `ConexionBD.java`.
+
+4. Configurar el usuario y contraseña en la clase:
+
+```text
+ConexionBD.java
+```
+
 5. Ejecutar el proyecto desde IntelliJ IDEA o mediante Maven.
 
 ---
 
-## 📸 Funcionalidades
+# 📈 Próximas mejoras
 
-El sistema permite:
+Este proyecto corresponde a la primera versión del sistema.
 
-- Registrar usuarios.
-- Registrar equipos.
-- Crear tickets asociados a un usuario.
-- Consultar información registrada.
-- Guardar usuarios, equipos y tickets en MySQL.
-- Exportar tickets a un archivo CSV.
+La siguiente versión (**HelpDeskPro V2**) incorporará:
 
----
-
-## 📈 Próximas mejoras
-
-- Arquitectura Repository Pattern.
-- Eliminación del almacenamiento CSV.
-- Lectura completa desde MySQL.
-- Login de usuarios.
-- Roles (Administrador / Técnico).
-- Dashboard de estadísticas.
-- Interfaz gráfica con JavaFX.
+- Arquitectura Repository Pattern
+- Eliminación del almacenamiento CSV
+- Persistencia completa en MySQL
+- Login de usuarios
+- Roles (Administrador y Técnico)
+- Dashboard de estadísticas
+- JavaFX
+- Validaciones avanzadas
+- Mejor manejo de excepciones
+- Código desacoplado y más mantenible
 
 ---
 
-## 👨‍💻 Autor
+# 👨‍💻 Autor
 
 **Sebastián Ignacio Ávila Sanhueza**
 
 Estudiante de Analista Programador Computacional  
 Duoc UC
 
+GitHub:
+
+👉 https://github.com/Sebastian6161
+
 ---
 
-## 📌 Estado del proyecto
+# 📌 Estado del proyecto
 
-✅ Versión 1.0 Finalizada
+**Versión:** 1.0
 
-Este proyecto corresponde a la primera versión funcional del sistema **HelpDeskPro**. El desarrollo continuará en **HelpDeskPro v2**, incorporando una arquitectura más profesional basada en Repository Pattern, mejoras en la persistencia de datos y una futura interfaz gráfica.
+Proyecto funcional desarrollado como parte del aprendizaje de Java, Programación Orientada a Objetos y conexión con bases de datos MySQL mediante JDBC.
